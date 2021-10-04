@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9356BBA25C7DAE400CF65D2 /* ChesnutMan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9356BB825C7DAE400CF65D2 /* ChesnutMan.cpp */; };
+		A9356BBE25C7DE2000CF65D2 /* Chestnut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9356BBC25C7DE2000CF65D2 /* Chestnut.cpp */; };
+		A943043725BD53D300778C6F /* Resources in CopyFiles */ = {isa = PBXBuildFile; fileRef = A99FCBEE25BAC50D00254F44 /* Resources */; };
+		A943043B25BD54CD00778C6F /* MainMenuState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A943043925BD54CD00778C6F /* MainMenuState.cpp */; };
+		A943043F25BD5A2500778C6F /* GameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A943043D25BD5A2500778C6F /* GameState.cpp */; };
+		A943044325BD66FA00778C6F /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A943044125BD66FA00778C6F /* InputManager.cpp */; };
+		A943044725BD6DD100778C6F /* Bignose.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A943044525BD6DD100778C6F /* Bignose.cpp */; };
+		A99FCBCE25BAB96A00254F44 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A99FCBCD25BAB96A00254F44 /* main.cpp */; };
+		A99FCBDB25BABA8800254F44 /* libsfml-network.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A99FCBD625BABA8800254F44 /* libsfml-network.2.5.1.dylib */; };
+		A99FCBDC25BABA8800254F44 /* libsfml-window.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A99FCBD725BABA8800254F44 /* libsfml-window.2.5.1.dylib */; };
+		A99FCBDD25BABA8800254F44 /* libsfml-audio.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A99FCBD825BABA8800254F44 /* libsfml-audio.2.5.1.dylib */; };
+		A99FCBDE25BABA8800254F44 /* libsfml-system.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A99FCBD925BABA8800254F44 /* libsfml-system.2.5.1.dylib */; };
+		A99FCBDF25BABA8800254F44 /* libsfml-graphics.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A99FCBDA25BABA8800254F44 /* libsfml-graphics.2.5.1.dylib */; };
+		A99FCBE425BABEE500254F44 /* AssetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A99FCBE225BABEE500254F44 /* AssetManager.cpp */; };
+		A99FCBE825BAC1AC00254F44 /* StateMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A99FCBE625BAC1AC00254F44 /* StateMachine.cpp */; };
+		A99FCBF125BAC57400254F44 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A99FCBEF25BAC57400254F44 /* Game.cpp */; };
+		A99FCBF525BAC5B900254F44 /* SplashState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A99FCBF325BAC5B900254F44 /* SplashState.cpp */; };
+		A9E2BAD725C2854E00F43AE4 /* Donut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9E2BAD525C2854E00F43AE4 /* Donut.cpp */; };
+		A9E2BADB25C28C1400F43AE4 /* Collision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9E2BAD925C28C1400F43AE4 /* Collision.cpp */; };
+		A9E2BADF25C2D69500F43AE4 /* GameOverState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9E2BADD25C2D69500F43AE4 /* GameOverState.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A943043625BD53BE00778C6F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				A943043725BD53D300778C6F /* Resources in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A99FCBC825BAB96A00254F44 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A9356BB825C7DAE400CF65D2 /* ChesnutMan.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ChesnutMan.cpp; sourceTree = "<group>"; };
+		A9356BB925C7DAE400CF65D2 /* ChesnutMan.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ChesnutMan.hpp; sourceTree = "<group>"; };
+		A9356BBC25C7DE2000CF65D2 /* Chestnut.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Chestnut.cpp; sourceTree = "<group>"; };
+		A9356BBD25C7DE2000CF65D2 /* Chestnut.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Chestnut.hpp; sourceTree = "<group>"; };
+		A943043925BD54CD00778C6F /* MainMenuState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MainMenuState.cpp; sourceTree = "<group>"; };
+		A943043A25BD54CD00778C6F /* MainMenuState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MainMenuState.hpp; sourceTree = "<group>"; };
+		A943043D25BD5A2500778C6F /* GameState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameState.cpp; sourceTree = "<group>"; };
+		A943043E25BD5A2500778C6F /* GameState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameState.hpp; sourceTree = "<group>"; };
+		A943044125BD66FA00778C6F /* InputManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; };
+		A943044225BD66FA00778C6F /* InputManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InputManager.hpp; sourceTree = "<group>"; };
+		A943044525BD6DD100778C6F /* Bignose.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bignose.cpp; sourceTree = "<group>"; };
+		A943044625BD6DD100778C6F /* Bignose.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bignose.hpp; sourceTree = "<group>"; };
+		A978ABFA25BFE7D1005DFBBC /* Directions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Directions.hpp; sourceTree = "<group>"; };
+		A99FCBCA25BAB96A00254F44 /* Pac-Man */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Pac-Man"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A99FCBCD25BAB96A00254F44 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A99FCBD625BABA8800254F44 /* libsfml-network.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-network.2.5.1.dylib"; path = "../External Libraries/SFML/lib/libsfml-network.2.5.1.dylib"; sourceTree = "<group>"; };
+		A99FCBD725BABA8800254F44 /* libsfml-window.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-window.2.5.1.dylib"; path = "../External Libraries/SFML/lib/libsfml-window.2.5.1.dylib"; sourceTree = "<group>"; };
+		A99FCBD825BABA8800254F44 /* libsfml-audio.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-audio.2.5.1.dylib"; path = "../External Libraries/SFML/lib/libsfml-audio.2.5.1.dylib"; sourceTree = "<group>"; };
+		A99FCBD925BABA8800254F44 /* libsfml-system.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-system.2.5.1.dylib"; path = "../External Libraries/SFML/lib/libsfml-system.2.5.1.dylib"; sourceTree = "<group>"; };
+		A99FCBDA25BABA8800254F44 /* libsfml-graphics.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-graphics.2.5.1.dylib"; path = "../External Libraries/SFML/lib/libsfml-graphics.2.5.1.dylib"; sourceTree = "<group>"; };
+		A99FCBE225BABEE500254F44 /* AssetManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AssetManager.cpp; sourceTree = "<group>"; };
+		A99FCBE325BABEE500254F44 /* AssetManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AssetManager.hpp; sourceTree = "<group>"; };
+		A99FCBE625BAC1AC00254F44 /* StateMachine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StateMachine.cpp; sourceTree = "<group>"; };
+		A99FCBE725BAC1AC00254F44 /* StateMachine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StateMachine.hpp; sourceTree = "<group>"; };
+		A99FCBEB25BAC25A00254F44 /* State.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = State.hpp; sourceTree = "<group>"; };
+		A99FCBEC25BAC27C00254F44 /* DEFINITION.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DEFINITION.hpp; sourceTree = "<group>"; };
+		A99FCBEE25BAC50D00254F44 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
+		A99FCBEF25BAC57400254F44 /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		A99FCBF025BAC57400254F44 /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		A99FCBF325BAC5B900254F44 /* SplashState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SplashState.cpp; sourceTree = "<group>"; };
+		A99FCBF425BAC5B900254F44 /* SplashState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SplashState.hpp; sourceTree = "<group>"; };
+		A9E2BAD525C2854E00F43AE4 /* Donut.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Donut.cpp; sourceTree = "<group>"; };
+		A9E2BAD625C2854E00F43AE4 /* Donut.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Donut.hpp; sourceTree = "<group>"; };
+		A9E2BAD925C28C1400F43AE4 /* Collision.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Collision.cpp; sourceTree = "<group>"; };
+		A9E2BADA25C28C1400F43AE4 /* Collision.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Collision.hpp; sourceTree = "<group>"; };
+		A9E2BADD25C2D69500F43AE4 /* GameOverState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameOverState.cpp; sourceTree = "<group>"; };
+		A9E2BADE25C2D69500F43AE4 /* GameOverState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameOverState.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A99FCBC725BAB96A00254F44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A99FCBDB25BABA8800254F44 /* libsfml-network.2.5.1.dylib in Frameworks */,
+				A99FCBDC25BABA8800254F44 /* libsfml-window.2.5.1.dylib in Frameworks */,
+				A99FCBDD25BABA8800254F44 /* libsfml-audio.2.5.1.dylib in Frameworks */,
+				A99FCBDE25BABA8800254F44 /* libsfml-system.2.5.1.dylib in Frameworks */,
+				A99FCBDF25BABA8800254F44 /* libsfml-graphics.2.5.1.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A99FCBC125BAB96A00254F44 = {
+			isa = PBXGroup;
+			children = (
+				A99FCBCC25BAB96A00254F44 /* Pac-Man */,
+				A99FCBCB25BAB96A00254F44 /* Products */,
+				A99FCBD525BABA8800254F44 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A99FCBCB25BAB96A00254F44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A99FCBCA25BAB96A00254F44 /* Pac-Man */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A99FCBCC25BAB96A00254F44 /* Pac-Man */ = {
+			isa = PBXGroup;
+			children = (
+				A99FCBEE25BAC50D00254F44 /* Resources */,
+				A99FCBCD25BAB96A00254F44 /* main.cpp */,
+				A99FCBE225BABEE500254F44 /* AssetManager.cpp */,
+				A99FCBE325BABEE500254F44 /* AssetManager.hpp */,
+				A99FCBE625BAC1AC00254F44 /* StateMachine.cpp */,
+				A99FCBE725BAC1AC00254F44 /* StateMachine.hpp */,
+				A99FCBEB25BAC25A00254F44 /* State.hpp */,
+				A99FCBEC25BAC27C00254F44 /* DEFINITION.hpp */,
+				A99FCBEF25BAC57400254F44 /* Game.cpp */,
+				A99FCBF025BAC57400254F44 /* Game.hpp */,
+				A99FCBF325BAC5B900254F44 /* SplashState.cpp */,
+				A99FCBF425BAC5B900254F44 /* SplashState.hpp */,
+				A943043925BD54CD00778C6F /* MainMenuState.cpp */,
+				A943043A25BD54CD00778C6F /* MainMenuState.hpp */,
+				A943043D25BD5A2500778C6F /* GameState.cpp */,
+				A943043E25BD5A2500778C6F /* GameState.hpp */,
+				A943044125BD66FA00778C6F /* InputManager.cpp */,
+				A943044225BD66FA00778C6F /* InputManager.hpp */,
+				A943044525BD6DD100778C6F /* Bignose.cpp */,
+				A943044625BD6DD100778C6F /* Bignose.hpp */,
+				A978ABFA25BFE7D1005DFBBC /* Directions.hpp */,
+				A9E2BAD525C2854E00F43AE4 /* Donut.cpp */,
+				A9E2BAD625C2854E00F43AE4 /* Donut.hpp */,
+				A9E2BAD925C28C1400F43AE4 /* Collision.cpp */,
+				A9E2BADA25C28C1400F43AE4 /* Collision.hpp */,
+				A9E2BADD25C2D69500F43AE4 /* GameOverState.cpp */,
+				A9E2BADE25C2D69500F43AE4 /* GameOverState.hpp */,
+				A9356BB825C7DAE400CF65D2 /* ChesnutMan.cpp */,
+				A9356BB925C7DAE400CF65D2 /* ChesnutMan.hpp */,
+				A9356BBC25C7DE2000CF65D2 /* Chestnut.cpp */,
+				A9356BBD25C7DE2000CF65D2 /* Chestnut.hpp */,
+			);
+			path = "Pac-Man";
+			sourceTree = "<group>";
+		};
+		A99FCBD525BABA8800254F44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A99FCBD825BABA8800254F44 /* libsfml-audio.2.5.1.dylib */,
+				A99FCBDA25BABA8800254F44 /* libsfml-graphics.2.5.1.dylib */,
+				A99FCBD625BABA8800254F44 /* libsfml-network.2.5.1.dylib */,
+				A99FCBD925BABA8800254F44 /* libsfml-system.2.5.1.dylib */,
+				A99FCBD725BABA8800254F44 /* libsfml-window.2.5.1.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A99FCBC925BAB96A00254F44 /* Pac-Man */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A99FCBD125BAB96A00254F44 /* Build configuration list for PBXNativeTarget "Pac-Man" */;
+			buildPhases = (
+				A99FCBC625BAB96A00254F44 /* Sources */,
+				A99FCBC725BAB96A00254F44 /* Frameworks */,
+				A99FCBC825BAB96A00254F44 /* CopyFiles */,
+				A943043625BD53BE00778C6F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pac-Man";
+			productName = "Pac-Man";
+			productReference = A99FCBCA25BAB96A00254F44 /* Pac-Man */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A99FCBC225BAB96A00254F44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					A99FCBC925BAB96A00254F44 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = A99FCBC525BAB96A00254F44 /* Build configuration list for PBXProject "Pac-Man" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A99FCBC125BAB96A00254F44;
+			productRefGroup = A99FCBCB25BAB96A00254F44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A99FCBC925BAB96A00254F44 /* Pac-Man */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A99FCBC625BAB96A00254F44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E2BADB25C28C1400F43AE4 /* Collision.cpp in Sources */,
+				A9E2BADF25C2D69500F43AE4 /* GameOverState.cpp in Sources */,
+				A9E2BAD725C2854E00F43AE4 /* Donut.cpp in Sources */,
+				A99FCBE425BABEE500254F44 /* AssetManager.cpp in Sources */,
+				A943043B25BD54CD00778C6F /* MainMenuState.cpp in Sources */,
+				A99FCBCE25BAB96A00254F44 /* main.cpp in Sources */,
+				A99FCBE825BAC1AC00254F44 /* StateMachine.cpp in Sources */,
+				A943044325BD66FA00778C6F /* InputManager.cpp in Sources */,
+				A943043F25BD5A2500778C6F /* GameState.cpp in Sources */,
+				A9356BBE25C7DE2000CF65D2 /* Chestnut.cpp in Sources */,
+				A99FCBF525BAC5B900254F44 /* SplashState.cpp in Sources */,
+				A99FCBF125BAC57400254F44 /* Game.cpp in Sources */,
+				A9356BBA25C7DAE400CF65D2 /* ChesnutMan.cpp in Sources */,
+				A943044725BD6DD100778C6F /* Bignose.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A99FCBCF25BAB96A00254F44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A99FCBD025BAB96A00254F44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A99FCBD225BAB96A00254F44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "\"${SRCROOT}/../External Libraries/SFML/include\"";
+				LIBRARY_SEARCH_PATHS = "\"${SRCROOT}/../External Libraries/SFML/lib\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A99FCBD325BAB96A00254F44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "\"${SRCROOT}/../External Libraries/SFML/include\"";
+				LIBRARY_SEARCH_PATHS = "\"${SRCROOT}/../External Libraries/SFML/lib\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A99FCBC525BAB96A00254F44 /* Build configuration list for PBXProject "Pac-Man" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A99FCBCF25BAB96A00254F44 /* Debug */,
+				A99FCBD025BAB96A00254F44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A99FCBD125BAB96A00254F44 /* Build configuration list for PBXNativeTarget "Pac-Man" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A99FCBD225BAB96A00254F44 /* Debug */,
+				A99FCBD325BAB96A00254F44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A99FCBC225BAB96A00254F44 /* Project object */;
+}
