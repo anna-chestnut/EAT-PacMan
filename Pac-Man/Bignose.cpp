@@ -13,18 +13,17 @@ Bignose::Bignose( GameDataRef data ) : _data( data ){
     _animationFrames.push_back(_data->assets.GetTexture("Big Nose 3"));
     _animationFrames.push_back(_data->assets.GetTexture("Big Nose 4"));
     
+    // Set sprite properties
     _bignoseSprite.setTexture( _animationFrames.at(_animationIterator));
-    
     _bignoseSprite.setPosition(( _data->window.getSize().x / 4 ) - ( _bignoseSprite.getGlobalBounds().width / 2 ) , ( _data->window.getSize().y / 4 ) - ( _bignoseSprite.getGlobalBounds().height / 2 ));
-    
     sf::Vector2f origin = sf::Vector2f( _bignoseSprite.getGlobalBounds().width / 2, _bignoseSprite.getGlobalBounds().height / 2 );
-    
     _bignoseSprite.setOrigin( origin );
     _bignoseSprite.setPosition(_data->window.getSize().x - _bignoseSprite.getGlobalBounds().width ,_bignoseSprite.getGlobalBounds().height * 2 );
     
     _rotation = 0;
     _bignoseScore = 0;
     
+    // Set score text properties
     _bignoseText.setFont(_data->assets.GetFont("Flappy Font"));
     _bignoseText.setString(std::to_string(_bignoseScore));
     _bignoseText.setCharacterSize(56);
@@ -134,8 +133,8 @@ void Bignose::Move(){
 }
 
 void Bignose::bignoseEat(){
+
     _bignoseScore++;
-    
     _bignoseText.setString(std::to_string(_bignoseScore));
     
 }

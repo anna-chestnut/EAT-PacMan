@@ -15,6 +15,7 @@ namespace AnnaPacMan {
             
             sf::Sprite sprite( _data->assets.GetTexture( "Chestnut" ) );
             
+            // Set random position
             sprite.setPosition( (rand() % (int)(_data->window.getSize().x - sprite.getGlobalBounds().width)), (rand() % (int)(_data->window.getSize().y - sprite.getGlobalBounds().height)) );
             
             ChestnutSpriteClass chestnutClass;

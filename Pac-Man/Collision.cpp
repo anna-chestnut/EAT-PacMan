@@ -31,7 +31,7 @@ namespace AnnaPacMan {
         }
         else
             return false;
-}
+    }
 
 
 

@@ -18,7 +18,7 @@ namespace AnnaPacMan
     {
         std::cout<<"Game State"<<std::endl;
         
-        this->_data->assets.LoadTexture("Game Background", GAME_BACKGROUND_FILEPATH);
+        // Load several textures to animate two characters
         this->_data->assets.LoadTexture("Big Nose 1", BIG_NOSE_FILEPATH_1);
         this->_data->assets.LoadTexture("Big Nose 2", BIG_NOSE_FILEPATH_2);
         this->_data->assets.LoadTexture("Big Nose 3", BIG_NOSE_FILEPATH_3);
@@ -27,12 +27,14 @@ namespace AnnaPacMan
         this->_data->assets.LoadTexture("Chesnt Man 2", CHESTNUT_MAN_FILEPATH_2);
         this->_data->assets.LoadTexture("Chesnt Man 3", CHESTNUT_MAN_FILEPATH_3);
         this->_data->assets.LoadTexture("Chesnt Man 4", CHESTNUT_MAN_FILEPATH_4);
-        
+
+        this->_data->assets.LoadTexture("Game Background", GAME_BACKGROUND_FILEPATH);
         this->_data->assets.LoadTexture("Donut", DONUT_FILEPATH);
         this->_data->assets.LoadTexture("Chestnut", CHESTNUT_FILEPATH);
         
         this->_data->assets.LoadFont("Flappy Font", FLAPPY_FONT_FILEPATH);
 
+        // Initial all GameObject
         bignose = new Bignose(_data);
         donut = new Donut(_data);
         chestnutman = new ChestnutMan(_data);
@@ -44,6 +46,7 @@ namespace AnnaPacMan
         
         _gameState = GameStates::ePlaying;
         
+        // Spwan Donut and Chestnut in random position
         donut->SpawnDonut();
         chestnut->SpawnChestnut();
     }
@@ -54,11 +57,13 @@ namespace AnnaPacMan
 
         while (this->_data->window.pollEvent(event))
         {
+            // Checl if Window close
             if (sf::Event::Closed == event.type)
             {
                 this->_data->window.close();
             }
             
+            // Player2 (BigNose) input
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
                 bignose->queueDirection(Direction::Left);
             }
@@ -71,6 +76,7 @@ namespace AnnaPacMan
             else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)){
                 bignose->queueDirection(Direction::Down);
             }
+            // Player1 (ChestnutMan) input
             else if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
                 chestnutman->queueDirection(Direction::Left);
             }
@@ -94,15 +100,15 @@ namespace AnnaPacMan
            
             bignose->Animate( dt );
             chestnutman->Animate(dt);
-            
         }
         
         if(_gameState == GameStates::ePlaying){
             
+            // Update two players' positions
             bignose->Move();
             chestnutman->Move();
             
-            
+            // Check if BigNose collide with any donut
             std::vector<Donut::DonutSpriteClass> donutSprites = donut->GetDonutSprites();
             
             for ( int i = 0; i < donutSprites.size() ; i++) {
@@ -120,6 +126,7 @@ namespace AnnaPacMan
             }
             donut->SetDonutClass(donutSprites);
             
+            // Check if ChestnutMan collide with any chestnut
             std::vector<Chestnut::ChestnutSpriteClass> chestnutSprites = chestnut->GetChestnutSprites();
             
             for ( int i = 0; i < chestnutSprites.size() ; i++) {

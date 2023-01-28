@@ -39,8 +39,13 @@ namespace AnnaPacMan {
             accumulator += frameTime;
             
             while (accumulator >= dt) {
-                this->_data->machine.GetActiveState( )->HandleInput( );
+
+                // constantly chack input in the active state
+                this->_data->machine.GetActiveState()->HandleInput();
+
+                // Update the game in the frame rate we set
                 this->_data->machine.GetActiveState()->Update(dt);
+
                 accumulator -= dt;
             }
             

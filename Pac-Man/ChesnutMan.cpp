@@ -12,18 +12,17 @@ namespace AnnaPacMan {
     _animationFrames.push_back(_data->assets.GetTexture("Chesnt Man 2"));
     _animationFrames.push_back(_data->assets.GetTexture("Chesnt Man 3"));
     _animationFrames.push_back(_data->assets.GetTexture("Chesnt Man 4"));
-    
+
+    // Set sprite properties
     _chestnutmanSprite.setTexture( _animationFrames.at(_animationIterator));
-    
     _chestnutmanSprite.setPosition(( _data->window.getSize().x / 4 ) - ( _chestnutmanSprite.getGlobalBounds().width / 2 ) , ( _data->window.getSize().y / 4 ) - ( _chestnutmanSprite.getGlobalBounds().height / 2 ));
-    
     sf::Vector2f origin = sf::Vector2f( _chestnutmanSprite.getGlobalBounds().width / 2, _chestnutmanSprite.getGlobalBounds().height / 2 );
-    
     _chestnutmanSprite.setOrigin( origin );
     
     _rotation = 0;
     _chestnutmanScore = 0;
     
+    // Set score text properties
     _chestnutmanText.setFont(_data->assets.GetFont("Flappy Font"));
     _chestnutmanText.setString(std::to_string(_chestnutmanScore));
     _chestnutmanText.setCharacterSize(56);
@@ -35,7 +34,6 @@ namespace AnnaPacMan {
 void ChestnutMan::Draw(){
     
     _data->window.draw( _chestnutmanSprite );
-    
     _data->window.draw(_chestnutmanText);
 }
 
@@ -67,7 +65,6 @@ void ChestnutMan::queueDirection(Direction dir)
     {
         if (dir == -_direction.front())
         {
-            std::cout<<"clear"<<std::endl;
             std::queue<Direction> clear;
             std::swap(_direction, clear);
         }
@@ -130,15 +127,15 @@ void ChestnutMan::Move(){
 }
 
 void ChestnutMan::chestnutmanEat(){
+
     _chestnutmanScore++;
-    
     _chestnutmanText.setString(std::to_string(_chestnutmanScore));
     
 }
 
-bool ChestnutMan::isFinish(){
-    
-    return _chestnutmanScore==DONUT_NUM;
+bool ChestnutMan::isFinish() {
+
+    return _chestnutmanScore == DONUT_NUM;
 }
 
 bool ChestnutMan::isOutside(float x, float y){

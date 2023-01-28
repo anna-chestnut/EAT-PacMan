@@ -7,7 +7,7 @@
 
 namespace AnnaPacMan
 {
-    //initial class member _data = data
+    
     SplashState::SplashState(GameDataRef data) : _data(data)
     {
 
@@ -15,8 +15,8 @@ namespace AnnaPacMan
 
     void SplashState::Init()
     {
+        // Set texture
         this->_data->assets.LoadTexture("Splash State Background", SPLASH_SCENE_BACKGROUND_FILEPATH);
-
         _background.setTexture(this->_data->assets.GetTexture("Splash State Background"));
     }
 
@@ -24,6 +24,7 @@ namespace AnnaPacMan
     {
         sf::Event event;
 
+        // Check if Window close
         while (this->_data->window.pollEvent(event))
         {
             if (sf::Event::Closed == event.type)

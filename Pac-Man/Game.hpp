@@ -25,11 +25,11 @@ namespace AnnaPacMan {
     public:
         Game( int width, int height, std::string title);
     private:
-        const float dt = 1.0f / 60.0f; //frame rate -> update how many time per second
+        const float dt = 1.0f / 60.0f; // frame rate -> update how many time per second
         sf::Clock _clock;
         
-        GameDataRef _data = std::make_shared<GameData>( );
+        GameDataRef _data = std::make_shared<GameData>();
         
-        void Run( );
+        void Run();
     };
 }
